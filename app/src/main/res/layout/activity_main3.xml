@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapplication.MainActivity3">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:background="@drawable/img"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_main_page"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginVertical="60dp"
+
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="B站内容\n分析系统"
+                android:textColor="#BF9000"
+                android:textSize="60dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/main_real_pic" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="240dp"
+                    android:background="@drawable/shape"
+                    android:text="早上好"
+                    android:gravity="center"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="260dp"
+                    android:layout_height="60dp"
+                    android:background="#FFFFFF">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="160dp"
+                    android:layout_height="260dp"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/btn1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="7dp"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:onClick="onClick"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/button_shape" />
+
+                    <ImageButton
+                        android:id="@+id/btn2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:onClick="onClick"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/button_shape2" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
